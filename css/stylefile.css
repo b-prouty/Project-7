@@ -2,11 +2,65 @@
   font-family: verdana;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  /* grid-auto-rows: minmax(150px, auto); */
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main";
+}
 
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 125px 70px 150px;
+  background-color: tomato;
+   padding-top: 10px;
+  /*padding-left: 30px; */
+}
 
+.notifications {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.alert-container{
+  margin: auto;
+  padding-right: 20px;
+  border-right: 1px solid #fff;
+}
 
+.alert-container img {
+  display: block;
+  height: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
+header img{
+padding-top: 10px;
+  height: 50px;
+  border-radius: 50%;
+}
 
+nav {
+  grid-area: nav;
+  background-color: steelblue;
+  padding: 10px;
+}
+nav img {
+  padding-top: 15px;
+
+}
+
+main {
+  grid-area: main;
+  display: grid;
+}
 
 
 /*  TOGGLE SWITCHES  */
@@ -69,4 +123,23 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+  .grid-container {
+  grid-template-columns: 55px 1fr;
+  grid-template-areas:
+  "header header"
+  "nav main";
+  }
+main{
+  grid-template-columns: 50%;
+}
+
+
+
 }
