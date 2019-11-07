@@ -111,8 +111,9 @@ main {
   grid-template-columns: 1fr 4fr;
 }
 .headline,
-.main-header-search{
-
+.main-header-search {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .main-header-search{
   background-color: #eee;
@@ -330,7 +331,7 @@ input:checked + .slider:before {
 }
 .person img {
   border-radius: 50%;
-  width: 100px;
+  width: 80%;
 }
 
 .person a {
@@ -388,7 +389,7 @@ body {
 }
 
 .daily, .members, .message {
-grid-column: 1 /  1;
+  grid-column: 1 /  1;
 }
 .main-header,
 .alert-dash{
