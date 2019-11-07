@@ -389,7 +389,7 @@ body {
 }
 
 .daily, .members, .message {
-  grid-column: 1 /  1;
+grid-column: 1 /  1;
 }
 .main-header,
 .alert-dash{
