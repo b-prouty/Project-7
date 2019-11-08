@@ -69,6 +69,15 @@ header h3 {
   padding-bottom: 10px;
 }
 
+#notifications {
+  width: 10px;
+  height: 10px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
 header img {
     border-radius: 50%;
     width: 2em;
@@ -132,6 +141,7 @@ main {
 }
 
 .alert-dash {
+  transition: visibility .5s, opacity .5s linear;
   margin-top: 20px;
   padding: 15px 10px;
 }
