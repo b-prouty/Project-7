@@ -127,7 +127,7 @@ main {
   padding: 10px;
   margin-top: 10px;
   margin-left: 5%;
-  width: 300px;
+  width: 80%;
 
 }
 
@@ -311,12 +311,12 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-/* .switch-pairs{
-  display: inline-block;
-} */
+.switch-pairs{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 .switch-pairs label,
 .switch-pairs p {
-  padding-top: 10px;
   display: inline-block;
 }
 .switch-pairs label {
@@ -334,10 +334,13 @@ input:checked + .slider:before {
    padding-bottom: 15px;
    padding-top: 15px;
    border-bottom: solid 1px #eee;
+   hyphens: auto;
 }
 .person:last-child{
   border-bottom: none;
 }
+
+
 
 .person-text {
   margin-right: auto;
@@ -345,6 +348,7 @@ input:checked + .slider:before {
 
 }
 .person-text a {
+  font-size: 12px;
   color: #7377BF;
 }
 
@@ -370,21 +374,27 @@ input:checked + .slider:before {
 .settings select {
   background: #eee;
   border: solid 1px #ddd;
+  border-radius: 5px;
   color: #ddd;
 }
  .widget-container button,
- .settings button{
+ .button-primary{
    background: #7377BF;
    color: #fff;
  }
 
- .settings button{
+ .button-primary,
+ .button-disabled {
    width:49%;
    padding: 10px;
    display: inline-block;
    margin-top: 20px;
+   border-radius: 5px;
+   border: none;
  }
-
+.button-disabled {
+  background: #eee;
+}
 
 @media (min-width: 768px) {
 body {
