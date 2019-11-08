@@ -67,10 +67,14 @@ canvas {
 }
 
 .bell-alert {
+  transition: fill.5s;
   padding-top: .5em;
   width: 1.5em;
   text-align: center;
   padding-bottom: 10px;
+}
+.bell-alert:hover {
+  fill: lightgreen;
 }
 
 #notifications {
@@ -375,6 +379,7 @@ input:checked+.slider:before {
 .person-text {
   margin-right: auto;
   padding: 0 5px;
+  font-size: 12px;
 }
 
 .person-text a {
@@ -387,7 +392,9 @@ input:checked+.slider:before {
   min-width: 75px;
   width: 50%;
 }
-
+.arrow {
+  text-align: right;
+}
 .time {
   grid-column: 3/4;
 }
