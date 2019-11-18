@@ -14,7 +14,7 @@ alertButton.addEventListener('click', () => {
 });
 
 send.addEventListener('click', () => {
-  if(searchUser.value === "" && message.value === ""){
+  if(searchUser.value === "" && message.value === "") {
     alert("Please find a user and insert a message before sending!");
     searchUser.value = '';
     message.value = '';
